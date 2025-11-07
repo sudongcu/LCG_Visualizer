@@ -118,13 +118,8 @@ dotnet build
 dotnet run
 ```
 
-## 🎯 Educational Value
+![lcg](https://github.com/user-attachments/assets/9d502dd1-a828-44e4-982c-8d16b9727a43)
 
-This tool helps with learning:
-- **Mathematics**: Understanding modular arithmetic and congruent operations
-- **Computer Science**: Learning pseudorandom number generation algorithms
-- **Visualization**: Intuitive understanding of abstract concepts
-- **Pattern Recognition**: Discovering periodicity and regularity in sequences
 
 ## 📄 License
 
