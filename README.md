@@ -51,7 +51,7 @@ Parameter selection guide for good periods:
 ```
 m=9, a=4, c=1, seed=0  (default)
 m=16, a=5, c=1, seed=0
-m=31, a=3, c=5, seed=0
+m=32, a=5, c=1, seed=0
 ```
 
 ### Controls
