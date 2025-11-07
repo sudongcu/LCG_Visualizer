@@ -128,8 +128,4 @@ This tool helps with learning:
 
 ## 📄 License
 
-This project is created for educational and learning purposes.
-
----
-
-**Made with ❤️ for understanding mathematics and computer science**
+This project is open source and licensed under the [MIT License](LICENSE).
