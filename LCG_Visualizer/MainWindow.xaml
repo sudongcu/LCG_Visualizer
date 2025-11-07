@@ -1,0 +1,34 @@
+﻿<Window x:Class="LcgVisualizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LCG Visualizer" Height="600" Width="800"
+        WindowState="Maximized"
+        WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#2A2A2A">
+            <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
+                <TextBlock Text="m: " VerticalAlignment="Center" Foreground="White" Margin="10,5,0,5" FontSize="20"/>
+                <TextBox x:Name="ModulusTextBox" Text="9" Width="60" Margin="5,0" FontSize="14" Height="28" TextAlignment="Center" VerticalContentAlignment="Center" />
+                <TextBlock Text="a: " VerticalAlignment="Center" Foreground="White" Margin="10,5,0,5" FontSize="20"/>
+                <TextBox x:Name="MultiplierTextBox" Text="4" Width="60" Margin="5,0" FontSize="14" Height="28" TextAlignment="Center" VerticalContentAlignment="Center" />
+                <TextBlock Text="c: " VerticalAlignment="Center" Foreground="White" Margin="10,5,0,5" FontSize="20"/>
+                <TextBox x:Name="IncrementTextBox" Text="1" Width="60" Margin="5,0" FontSize="14" Height="28" TextAlignment="Center" VerticalContentAlignment="Center" />
+                <TextBlock Text="seed: " VerticalAlignment="Center" Foreground="White" Margin="10,5,0,5" FontSize="20"/>
+                <TextBox x:Name="SeedTextBox" Text="0" Width="60" Margin="5,0" FontSize="14" Height="28" TextAlignment="Center" VerticalContentAlignment="Center" />
+                <Button Content="▶" Click="Visualize_Click" HorizontalAlignment="Right"  VerticalAlignment="Center" 
+                        Margin="10" Width="30"  Height="30" FontSize="12" FontWeight="Bold" Background="CornflowerBlue"
+                        Foreground="White" BorderThickness="0" Cursor="Hand" />
+                <Button Content="X" Click="Close_Click" HorizontalAlignment="Right"  VerticalAlignment="Center"
+                        Margin="50 0 10 0" Width="32"  Height="32" FontSize="12" FontWeight="Bold" Background="#DC3545"
+                        Foreground="White" BorderThickness="0" Cursor="Hand" />
+            </StackPanel>
+        </Grid>
+
+        <Canvas Grid.Row="1" x:Name="DrawingCanvas" Background="#2A2A2A" Margin="0"/>
+    </Grid>
+</Window>
