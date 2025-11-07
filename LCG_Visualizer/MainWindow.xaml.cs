@@ -185,8 +185,8 @@ namespace LcgVisualizer
                 // Draw arrowhead
                 DrawArrowhead(DrawingCanvas, startPoint, endPoint, GetStepColor(step));
 
-                // Wait 0.5 seconds (animation effect)
-                await Task.Delay(500);
+                // Wait 0.1 seconds (animation effect)
+                await Task.Delay(100);
 
                 currentX = nextX;
                 step++;
