@@ -161,7 +161,7 @@ namespace LcgVisualizer
                  * a: (a-1) must be divisible by all prime factors of m
                  * c: coprime with m (1 recommended)
                  */
-                long nextX = ((a * currentX + c) % m + m) % m;
+                long nextX = (a * currentX + c) % m;
 
                 // Draw line (arrow) - starting/ending at circle edges
                 Point startCenter = GetPointForNumber(currentX);
